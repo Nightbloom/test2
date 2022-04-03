@@ -1,43 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="icon.webp" style="height: 10vw;"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheSciFi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- navbar -->
+    <nav class="navbar">
+        <h1 class="brand">theSciFi</h1>
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="links-container">
+            <li class="links-item"><a href="#" class="link active">home</a></li>
+            <li class="links-item"><a href="#project-section" class="link">projects</a></li>
+            <li class="links-item"><a href="#about-section" class="link">about</a></li>
+            <li class="links-item"><a href="#contact-section" class="link">contacts</a></li>
+        </ul>
+    </nav>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- home section -->
+    <section class="home">
+        <div class="home-content">
+            <h1 class="home-heading">hi,<br>i am siddharth</h1>
+            <p class="profession">developer</p>
+            <p class="info"> I'm co-operative and colaborative am compititive coder, web developer and a designer.</p>
+            <a href="#contact-section" class="btn">contact</a>
+        </div>
+        <img src="img/mypic4.jpg" class="image" alt="">
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- about section -->
+    <section class="about" id="about-section">
+        <h2 class="heading">about <span class="highlight">me</span></h2>
+        <p class="sub-heading">A short para that tell the capability and intrest of mine</p>
+        <div class="seperator"></div>
+
+        <div class="about-me-container">
+            <div class="left-col">
+                <img src="img/mypic2.jpg" class="about-image" alt="">
+            </div>
+            <div class="right-col">
+                <p class="about-para">I'm a pre final year CSE Btech student.
+                    My strong points are in C/C++, HTML, CSS, JavaScript and  MERN. 
+                    Apart from that i got hands on knowledge on MERN stack and Game development. Im also a competive coder and a AR enthusiast.
+                    
+                    My noticeable work is on with the RESTful Api and the user authentication part in my projects such as a news app and a notebook have seperate notes for every user.
+                    
+                    I am a person who wants to show case my ideas on diffrent platforms that is the reason, i have participated in various competetions over my Btech years some of the names you may know that FAER-Macafee, Imagin Cup, SIH,NES IA, CSI etc.
+                    
+                    My strength
+                    I never say no to a stuffs that can make me improve myself and am a real workaholic  
+                </p>
+                <a href="#" class="btn">download cv/resume</a>
+            </div>
+        </div>
+
+        <h2 class="heading">languages and framework i know</h2>
+        <div class="seperator"></div>
+        <div class="skill-container">
+            <div class="skill-card" style="--bg: #198adb">
+                <p class="skill">C/C++</p>
+            </div>
+            <div class="skill-card" style="--bg: #353e32">
+                <p class="skill">UNITY</p>
+            </div>
+            <div class="skill-card" style="--bg: #eb3907">
+                <p class="skill">HTML</p>
+            </div>
+            <div class="skill-card" style="--bg: #0985ef">
+                <p class="skill">CSS</p>
+            </div>
+            <div class="skill-card" style="--bg: #e3eb22c9">
+                <p class="skill">JavaScript</p>
+            </div>
+            <div class="skill-card" style="--bg: #5e5c57">
+                <p class="skill">EXPRESS</p>
+            </div>
+            <div class="skill-card" style="--bg: #49e8f0">
+                <p class="skill">ReactJS</p>
+            </div>
+            <div class="skill-card" style="--bg: #399400">
+                <p class="skill">NodeJS</p>
+            </div>
+            <div class="skill-card" style="--bg: #11cb15">
+                <p class="skill">MongoDB</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- project section -->
+    <section class="project" id="project-section">
+        <h2 class="heading">project<span class="highlight">s</span></h2>
+        <p class="sub-heading">You can find my projects on the my <a href="https://github.com/Nightbloom" style="
+            text-decoration: none;
+            font-weight: 600;
+        " class="highlight">Github</a>  </p>
+        <div class="seperator"></div>
+        
+        <div class="filters">
+            <button class="filter-btn active" id="all">all</button>
+            <button class="filter-btn" id="javascript">javascript</button>
+            <button class="filter-btn" id="ui">ui/Ux</button>
+            <button class="filter-btn" id="backend">backend</button>
+            <button class="filter-btn" id="fullstack">fullstack</button>
+        </div>
+        
+        <div class="project-container">
+            <!-- <div class="project-card">
+                <img src="img/project1.jpg" alt="">
+                <div class="content">
+                    <h1 class="project-name">project one</h1>
+                    <span class="tags">#javascript</span>
+                </div>
+            </div> -->
+        </div>    
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact-section">
+        <h2 class="heading">contact<span class="highlight"> me</span></h2>
+        <p class="sub-heading">Feel free to drop a mail</p>
+        <div class="seperator"></div>
+        
+        <div class="contact-form">
+            <div class="name">
+                <input type="text" class="first-name" required placeholder="first name">
+                <input type="text" class="last-name" required placeholder="last name">
+            </div>
+            <input type="email" required class="email" placeholder="email">
+            <textarea class="message" placeholder="message" required></textarea>
+            <button class="btn contact-btn">send</button>
+        </div>
+    </section>
+
+    <footer class="footer">TheSciFi © 2022</footer>
+
+    <script src="../src/project.js"></script>
+    <script src="../src/App.js"></script>
+</body>
 </html>
